@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="welcome">
+      <header>
+        <nav>
+          <h2>sunnyside</h2>
+          <ul class="nav-items">
+            <li><a href="#">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#testimonial">Projects</a></li>
+            <li class="contact-nav"><a href="">Contact</a></li>
+          </ul>
+ <i style="font-size: 28px;" class="fas fa-bars toggler""></i>
+ <i style="font-size: 28px;" class="fas fa-times close"></i>
+        </nav>
+        <h1 class="head-txt">WE ARE CREATIVES</h1>
+        <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg">
+          <g
+            stroke="#FFF"
+            stroke-width="6"
+            fill="none"
+            fill-rule="evenodd"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 3v100M3 95.484l15 15 15-15" />
+          </g>
+        </svg>
+      </header>
+    </section>
+    <section id="service">
+      <div class="container">
+        <div class="subcon subcon-1">
+          <div class="box box-1">
+            <img src="images/desktop/image-transform.jpg" alt="" />
+          </div>
+          <div class="box box-2">
+            <h1>Transform Your Brand</h1>
+            <p>
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a href=""> LEARN MORE</a>
+          </div>
+        </div>
+        <div class="subcon subcon-2">
+          <div class="box box-3">
+            <h1>Stand out to the right audience</h1>
+            <p>
+              Using a collaborative formula of designers,researchers,photographer,videographer,and copywriter,we'll build and extend your brand in digital places.
+            </p>
+            <a href=""> LEARN MORE</a>
+          </div>
+          <div class="box box-4">
+            <img src="images/desktop/image-stand-out.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="box-first boxes">
+          <img src="images/desktop/image-graphic-design.jpg" alt="" />
+          <div class="text">
+            <h1>Graphic Design</h1>
+            <p>
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients
+              attention.
+            </p>
+          </div>
+        </div>
+        <div class="box-last boxes">
+          <img src="images/desktop/image-photography.jpg" alt="" />
+          <div class="text">
+            <h1>Photography</h1>
+            <p>
+              Increase your credibility by getting the stunning, high-quality
+              photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonial">
+      <h2>Client testimonials</h2>
+      <div class="testi-wrapper">
+      <div class="testi testi-1">
+        <img src="images/image-emily.jpg" alt="" />
+        <p class="main-para">
+          We put our trust in Sunnyside and they delivered, making sure our
+          needs were met and deadlines were always hit.
+        </p><p class="addr-para">
+        <span class="tes-name">Emily R.</span> <br><br>Marketing Director</p>
+      </div>
+      <div class="testi testi-2">
+        <img src="images/image-thomas.jpg" alt="" />
+        <p class="main-para">
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+          success made it a satisfying and enjoyable experience.
+        </p><p class="addr-para">
+          <span class="tes-name">Thomas S.</span> <br><br> Chief Operating Officer</p>
+      </div>
+      <div class="testi testi-3">
+        <img src="images/image-jennie.jpg" alt="" />
+        <p class="main-para">
+          Incredible end result! Our sales increased over 400% when we worked
+          with Sunnyside. Highly recommended!
+        </p>
+        <p class="addr-para">
+          <span class="tes-name"> Jennie F.</span> <br><br> Business Owner
+      </p>
+      </div>
+    </section>
+<section id="img-box">
+  <div class="box-wrapper">
+    <img src="images/desktop/image-gallery-milkbottles.jpg" alt="">
+    <img src="images/desktop/image-gallery-orange.jpg" alt="">
+    <img src="images/desktop/image-gallery-cone.jpg" alt="">
+    <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
+  </div>
+</section>
+<section id="footer">
+  <footer>
+    <h1>sunnyside</h1>
+    <a href="">About</a>
+    <a href="">Services</a>
+    <a href="">Projects</a>
+    <ul>
+      <li><i class="fab fa-facebook"></i></li>
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-instagram"></i></li>
+    </ul>
+  </footer>
+</section>
+
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://facebook.com/thetymtravellr">Robiul Hasan</a>.
+    </div>
+  </div>
+  <script>
+    let toggler = document.querySelector('.toggler');
+    let close = document.querySelector('.close');
+    let item = document.querySelector('.nav-items');
+
+    toggler.addEventListener('click', function(){
+      item.style.display = 'block';
+      toggler.style.display = 'none';
+      close.style.display = 'block';
+    });
+    close.addEventListener('click', function(){
+      item.style.display = 'none';
+      close.style.display = 'none';
+      toggler.style.display = 'block';
+    });
+  </script>
+  </body>
+</html>
